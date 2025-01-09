@@ -1,5 +1,9 @@
+"use client";
+import { useBalance } from "@repo/store/useBalance";
+
 const MainPage = () => {
-  return <div>MainPage</div>;
+  const bal = useBalance();
+  return <div>MainPage is {bal} </div>;
 };
 
 export default MainPage;
